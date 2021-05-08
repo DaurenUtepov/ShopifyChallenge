@@ -1,0 +1,38 @@
+body{
+    font-family: 'Girassol', cursive;
+    background-color: rgba(248, 246, 246, 0.8);
+}
+
+#loading {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    font-size: 5rem;
+    animation: mymove 3s infinite;
+}
+  
+@keyframes mymove {
+    100% {transform: rotate(360deg);}
+}
+
+.add-movie{
+    animation: addanima 1s ease-out;
+}
+
+@keyframes addanima {
+    100% {background-color:rgb(241, 226, 14)}
+}
+
+.remove-movie{
+    position: absolute;
+    right: 0;
+    transition: right 2s;
+    animation: removeanima 3s ease-out;
+}
+
+@keyframes removeanima {
+    100% {right: -50%;}
+}
